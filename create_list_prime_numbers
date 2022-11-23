@@ -123,9 +123,8 @@ int     creat_tab(int n)
     }
     tab[i] = '\0';
     ft_put_int_tab(tab);
-    k = tab[i - 1];
+    k = tab[i - 1] + 2;
     i = 0;
-    k += 2;
     while (k <= n)
     {
         while ((tab[i] != '\0' && k % tab[i] > 0) || 
@@ -138,7 +137,7 @@ int     creat_tab(int n)
         k += 2;
         i = 0;
     }
-    return (2);
+    return (0);
 }
 
 
